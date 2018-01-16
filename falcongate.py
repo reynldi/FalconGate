@@ -82,7 +82,7 @@ threads["vuln_scanner"] = offensive.ScheduledScans("vuln_scanner")
 threads["api"] = api.FlaskAPI("api")
 
 
-# Global functions
+# Global functions.
 def get_lock(name):
     global lock_socket   # Without this our lock gets garbage collected
     lock_socket = socket.socket(socket.AF_UNIX, socket.SOCK_DGRAM)
